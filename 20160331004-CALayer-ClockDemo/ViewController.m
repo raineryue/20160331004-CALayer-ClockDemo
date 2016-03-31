@@ -58,7 +58,7 @@
     self.secondLayer = [[CALayer alloc] init];
     
     self.secondLayer.position = CGPointMake(kClockW * 0.5, kClockW * 0.5);
-    self.secondLayer.anchorPoint = CGPointMake(0.5, 0.8);
+    self.secondLayer.anchorPoint = CGPointMake(0.5, 0.9);
     self.secondLayer.backgroundColor = [UIColor redColor].CGColor;
     self.secondLayer.bounds = CGRectMake(0, 0, 1, kClockW * 0.5 - 10);
     
@@ -72,9 +72,9 @@
     self.minuteLayer = [[CALayer alloc] init];
     
     self.minuteLayer.position = CGPointMake(kClockW * 0.5, kClockW * 0.5);
-    self.minuteLayer.anchorPoint = CGPointMake(0.5, 0.8);
+    self.minuteLayer.anchorPoint = CGPointMake(0.5, 0.95);
     self.minuteLayer.backgroundColor = [UIColor blueColor].CGColor;
-    self.minuteLayer.bounds = CGRectMake(0, 0, 3, kClockW * 0.5 - 10);
+    self.minuteLayer.bounds = CGRectMake(0, 0, 3, kClockW * 0.5 - 20);
     
     [self.clockImageView.layer addSublayer:self.minuteLayer];
 }
@@ -86,9 +86,9 @@
     self.hourLayer = [[CALayer alloc] init];
     
     self.hourLayer.position = CGPointMake(kClockW * 0.5, kClockW * 0.5);
-    self.hourLayer.anchorPoint = CGPointMake(0.5, 0.8);
+    self.hourLayer.anchorPoint = CGPointMake(0.5, 0.95);
     self.hourLayer.backgroundColor = [UIColor blackColor].CGColor;
-    self.hourLayer.bounds = CGRectMake(0, 0, 5, kClockW * 0.5 - 30);
+    self.hourLayer.bounds = CGRectMake(0, 0, 4, kClockW * 0.5 - 35);
     self.hourLayer.cornerRadius = 4;
     
     [self.clockImageView.layer addSublayer:self.hourLayer];
